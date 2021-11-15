@@ -16,8 +16,7 @@ namespace Learning.Controllers
       
         private static string msg(string name)
         {
-            var teste = "hello world " + name;            
-            return teste;
+            return $"hello world, {name}";
         }
 
         private static TodoItem GeraObj()
