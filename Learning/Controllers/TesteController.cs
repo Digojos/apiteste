@@ -11,12 +11,12 @@ namespace Learning.Controllers
 {
     [ApiController]
     [Route("api/teste")]
-    public class Teste : ControllerBase
+    public class TesteController : ControllerBase
     {
       
-        private static string msg()
+        private static string msg(string name)
         {
-            var teste = "hello world";            
+            var teste = "hello world " + name;            
             return teste;
         }
 
@@ -33,16 +33,16 @@ namespace Learning.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly TodoContext _context;
 
-        public Teste(ILogger<WeatherForecastController> logger, TodoContext contexto)
+        public TesteController(ILogger<WeatherForecastController> logger, TodoContext contexto)
         {
             _logger = logger;
             _context = contexto;
         }
 
         [HttpGet("msg")]
-        public string Get()
+        public string Get(string name)
         {
-            var result = msg();
+            var result = msg(name);
 
             return result;
 
