@@ -22,7 +22,7 @@ namespace Learning.Controllers
         private static TodoItem GeraObj()
         {
             var obj = new TodoItem();
-            obj.Name = "Arroz";
+            obj.Name = "Macarrão";
             obj.Description = "Arroz gostosinho";
             obj.Price = "4.20";
 
