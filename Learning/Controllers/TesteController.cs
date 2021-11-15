@@ -24,7 +24,7 @@ namespace Learning.Controllers
             var obj = new TodoItem();
             obj.Name = "Macarrão";
             obj.Description = "Arroz gostosinho";
-            obj.Price = "4.20";
+            obj.Price = "2.47";
 
             return obj;
         }
